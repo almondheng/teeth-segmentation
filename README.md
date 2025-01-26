@@ -39,6 +39,6 @@ docker run -p 8080:8080 teeth-segmentation
 ```
 
 ## Run inference
-1. Go to http://localhost:8080/docs in a browser.
-2. Select test at POST /predict.
-3. Upload a dental X-ray image. (see examples/ folder)
+```bash
+curl -F "image=@examples/124.jpg" http://localhost:8080/predict \
+```
